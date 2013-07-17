@@ -6,10 +6,10 @@ $border: 1px solid #ccc; // Default border style for all tables
 
 table,
 .table {
-	max-width : 100%;
-	table-layout: fixed;
-	border-collapse: collapse;
-	vertical-align: top;
+  max-width : 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  vertical-align: top;
 }
 
 /**
@@ -17,98 +17,98 @@ table,
  * See: https://github.com/raphaelgoetter/KNACSS/issues/18
  */
 table {
-	width: 100%;
-	border: $border;
-	margin-bottom: 1.5em; 
+  width: 100%;
+  border: $border;
+  margin-bottom: 1.5em; 
 
-	&#recaptcha_table {
-		table-layout: auto; /* 1 */
-	}
+  &#recaptcha_table {
+    table-layout: auto; /* 1 */
+  }
 }
 
 .table {
-	display: table;
+  display: table;
 }
 
 caption {
-	padding: 10px;
-	color: #555;
-	font-style: italic;	
+  padding: 10px;
+  color: #555;
+  font-style: italic;  
 }
 
 /**
  * Remove thead on tiny screens
  */
 thead {
-	@include mq(tiny) {
-		display: none; /* 1 */
-	}
+  @include mq(tiny) {
+    display: none; /* 1 */
+  }
 }
 
 tr > * + * {
-	border-left: $border;
+  border-left: $border;
 }
 
 th,
 td {
-	padding: .3em .8em;
-	text-align: left;
-	border-bottom: $border;
+  padding: .3em .8em;
+  text-align: left;
+  border-bottom: $border;
 
-	@include mq(tiny) {
-		display: block !important;
-		width: auto !important;
-		text-align: left !important;
-	}
+  @include mq(tiny) {
+    display: block !important;
+    width: auto !important;
+    text-align: left !important;
+  }
 }
 
 td {
-	color: #333;
+  color: #333;
 }
 
 /**
  * Alternate tables 
  */
 .alternate { 
-	border: 0;
+  border: 0;
 
-	thead tr > * + * { 
-		border-left: 0;
-	}
+  thead tr > * + * { 
+    border-left: 0;
+  }
 
-	tbody tr > * + * {
-		border-left: $border;
-	}
+  tbody tr > * + * {
+    border-left: $border;
+  }
 }
 
 /** 
  * Alternate-vert tables 
  */
 .alternate-vert { 
-	border: 0;
-	border-right: $border;
+  border: 0;
+  border-right: $border;
 
-	tr > :first-child {
-		border-bottom: 0;
-	}
+  tr > :first-child {
+    border-bottom: 0;
+  }
 
-	tr > * + * {
-		border-top: $border;
-	}
+  tr > * + * {
+    border-top: $border;
+  }
 }
 
 /**
  * Striped tables 
  */
 .striped tbody tr:nth-child(odd) {
-	background: #eee;
-	background: rgba(0, 0, 0, .05);
+  background: #eee;
+  background: rgba(0, 0, 0, .05);
 }
 
 /** 
  * Striped-vert tables 
  */
 .striped-vert tr > :first-child {
-	background: #eee;
-	background: rgba(0, 0, 0, .05);
+  background: #eee;
+  background: rgba(0, 0, 0, .05);
 }

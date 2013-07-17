@@ -7,19 +7,19 @@
  * 2. Orientation iOS font-size fix
  */
 html {
-	font: 62.5%/1.5 "Century Gothic", helvetica, arial, sans-serif; /* 1 */
-	color: #000;
-	
-	@media (orientation: landscape) and (max-device-width: 768px) {
-		-webkit-text-size-adjust: 100%; /* 2 */
-	}
+  font: 62.5%/1.5 "Century Gothic", helvetica, arial, sans-serif; /* 1 */
+  color: #000;
+  
+  @media (orientation: landscape) and (max-device-width: 768px) {
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
 }
 
 /**
  * 1. Put the base font-size at 14px (1.4rem)
  */
 body {
-	@include rem(14); /* 1 */
+  @include rem(14); /* 1 */
 }
 
 /**
@@ -32,9 +32,9 @@ blockquote, pre,
 td, th,
 label, textarea,
 caption, details, figure {
-	@include rem(14);
-	line-height: 1.5;
-	margin: .75em 0 0;
+  @include rem(14);
+  line-height: 1.5;
+  margin: .75em 0 0;
 }
 
 h1, .h1-like,
@@ -43,20 +43,20 @@ h3, .h3-like,
 h4, .h4-like,
 h5, .h5-like,
 h6, .h6-like {
-	font-weight: normal;
-	margin: 21px 0 0 0;
+  font-weight: normal;
+  margin: 21px 0 0 0;
 }
 
 h1, .h1-like, 
 h2, .h2-like,
 h3, .h3-like {
-	line-height: 42px;
+  line-height: 42px;
 }
 
 h4, .h4-like,
 h5, .h5-like,
 h6, .h6-like {
-	line-height: 21px;
+  line-height: 21px;
 }
 
 h1, .h1-like { @include rem(26); }
@@ -67,9 +67,9 @@ h5, .h5-like { @include rem(18); }
 h6, .h6-like { @include rem(16); }
 
 /* alternate font-sizing */
-.smaller	 { @include rem(10); }
-.small   	 { @include rem(12); }
-.medium 	 { @include rem(14); }
-.big     	 { @include rem(16); }
-.bigger  	 { @include rem(18); }
-.biggest 	 { @include rem(20); }
+.smaller   { @include rem(10); }
+.small      { @include rem(12); }
+.medium    { @include rem(14); }
+.big        { @include rem(16); }
+.bigger     { @include rem(18); }
+.biggest    { @include rem(20); }

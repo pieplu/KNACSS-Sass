@@ -5,63 +5,63 @@
 html, body,
 textarea,
 figure, label {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ul, ol {
-	padding-left: 2em;
+  padding-left: 2em;
 
-	&.unstyled {
-		list-style: none;
-	}
+  &.unstyled {
+    list-style: none;
+  }
 }
 
 code, pre, samp, kbd {
-	white-space: pre-wrap;
-	font-family: consolas, 'DejaVu Sans Mono', courier, monospace;
-	line-height: 1em;
+  white-space: pre-wrap;
+  font-family: consolas, 'DejaVu Sans Mono', courier, monospace;
+  line-height: 1em;
 }
 
 code, kbd, mark { 
-	border-radius: 2px; 
+  border-radius: 2px; 
 }
 
 em { 
-	font-style: italic; 
+  font-style: italic; 
 }
 
 strong { 
-	font-weight: bold; 
+  font-weight: bold; 
 }
 
 kbd {
-	padding: 0 2px;
-	border: 1px solid #999;
+  padding: 0 2px;
+  border: 1px solid #999;
 }
 
 code {
-	padding: 2px 4px;
-	background: rgba(0,0,0,.04);
-	color: #b11; 
+  padding: 2px 4px;
+  background: rgba(0,0,0,.04);
+  color: #b11; 
 }
 
 mark {
-	padding:2px 4px;
-	background: #ff0;
+  padding:2px 4px;
+  background: #ff0;
 }
 
 sup, sub {
-	vertical-align: 0;
-	position: relative;
+  vertical-align: 0;
+  position: relative;
 }
 
 sup {
-	bottom: 1ex;
+  bottom: 1ex;
 }
 
 sub {
-	top: .5ex;
+  top: .5ex;
 }
 
 /**
@@ -70,19 +70,19 @@ sub {
 p, ul, ol dl,
 blockquote, pre,
 h1, h2, h3, h4, h5, h6 {
-	&:first-child {
-		margin-top: 0;
-	}
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 /**
  * Avoid margins on nested elements 
  */
 li {
-	p, ul, ol {
-		margin-top: 0;
-		margin-bottom: 0;
-	}
+  p, ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 /**
@@ -91,7 +91,7 @@ li {
 img, table, td, 
 blockquote, code, pre, 
 textarea, input, video {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 /**
@@ -101,18 +101,18 @@ textarea, input, video {
  * 3. Remove blue border on IE
  */
 img {
-	height: auto;
-	vertical-align: middle;
-	width: auto; /* 1 */
+  height: auto;
+  vertical-align: middle;
+  width: auto; /* 1 */
 
-	#map_canvas &, 
-	.gmnoprint & {
-		max-width: none; /* 2 */
-	}
+  #map_canvas &, 
+  .gmnoprint & {
+    max-width: none; /* 2 */
+  }
 
-	a & {
-		border: 0; /* 3 */
-	}
+  a & {
+    border: 0; /* 3 */
+  }
 }
 
 /**
@@ -120,21 +120,21 @@ img {
  */
 body > script,
 body > style { 
-	display: none !important;
+  display: none !important;
 }
 
 /**
  * Force word wrapping on small screens
  */
 @include mq(small) {
-	div, textarea, 
-	table, td, th, 
-	code, pre, samp {
-	    -ms-word-break: break-all;
-	    word-break: break-all;
-	    word-break: break-word;
-	    -webkit-hyphens: auto;
-	    -moz-hyphens: auto;
-	    hyphens: auto;
-    }
+  div, textarea, 
+  table, td, th, 
+  code, pre, samp {
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+  }
 }

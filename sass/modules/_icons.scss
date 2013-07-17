@@ -14,47 +14,47 @@
 .icon > li:before,
 .icon.after:after,
 .icon.after > li:after {
-    content: "";
-    @include inline-block(middle);
-    position: relative; 
-    top: -.1em;
-    margin: 0 .3em 0 0;
-    font: 1.4em/1 sans-serif;
-    color: #000;
-    text-shadow: 1px 1px 0 rgba(0,0,0,.1);
-    speak: none; /* 1 */
+  content: "";
+  @include inline-block(middle);
+  position: relative; 
+  top: -.1em;
+  margin: 0 .3em 0 0;
+  font: 1.4em/1 sans-serif;
+  color: #000;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.1);
+  speak: none; /* 1 */
 
-    @include mq(medium) {
-        font: 1em/0.6 sans-serif;
-        -webkit-transform: rotateZ(0.05deg); /* 2 */
-    }
+  @include mq(medium) {
+    font: 1em/0.6 sans-serif;
+    -webkit-transform: rotateZ(0.05deg); /* 2 */
+  }
 }
 
 .icon.after,
 .icon.after > li {
-    &:after {
-        margin: 0 0 0 8px;
-    }
+  &:after {
+    margin: 0 0 0 8px;
+  }
 }
 
 ul.icon {
-    display: block;
+  display: block;
 }
 
 ul.icon > li {
-    list-style: none;
+  list-style: none;
 }
 
 ul.icon:before,
 ul.icon.after:after {
-    content: "";
+  content: "";
 }
 
 .icon.after,
 .icon.after > li {
-    &:before {
-        content: "" !important;
-    }
+  &:before {
+    content: "" !important;
+  }
 }
 
 /**
@@ -87,16 +87,15 @@ $icons: ( (rate,     2605, false),
  * Looping through icons
  */
 @each $item in $icons {
-    .icon-#{nth($item, 1)}:before,
-    .icon-#{nth($item, 1)} > li:before,
-    .icon-#{nth($item, 1)}.after:after,
-    .icon-#{nth($item, 1)}.after > li:after {
-        content: "\#{nth($item, 2)}";
-        @if nth($item, 3) == true {
-            font-weight: bold;
-        }
+  .icon-#{nth($item, 1)}:before,
+  .icon-#{nth($item, 1)} > li:before,
+  .icon-#{nth($item, 1)}.after:after,
+  .icon-#{nth($item, 1)}.after > li:after {
+    content: "\#{nth($item, 2)}";
+    @if nth($item, 3) == true {
+      font-weight: bold;
     }
-
+  }
 }
 
 /**
@@ -106,8 +105,8 @@ $icons: ( (rate,     2605, false),
 .icon-arrow1 > li:before,
 .icon-arrow1.after:after, 
 .icon-arrow1.after > li:after {
-    position: relative; 
-    top: -.15em;
+  position: relative; 
+  top: -.15em;
 }
 
 .icon-bracket1:before, 
@@ -118,47 +117,47 @@ $icons: ( (rate,     2605, false),
 .icon-bracket2 > li:before,
 .icon-bracket2.after:after, 
 .icon-bracket2.after > li:after {
-    font-size: 1.6em;
-    position: relative; 
-    top: -.15em;
+  font-size: 1.6em;
+  position: relative; 
+  top: -.15em;
 }
 
 .icon-bull:before, 
 .icon-bull > li:before,
 .icon-bull.after:after, 
 .icon-bull.after > li:after {
-    font-size: 1.2em;
-    top: -.05em;
+  font-size: 1.2em;
+  top: -.05em;
 }
 
 .icon-bull2:before, 
 .icon-bull2 > li:before,
 .icon-bull2.after:after, 
 .icon-bull2.after > li:after {
-    top: -.05em;
+  top: -.05em;
 }
 
 .icon-bull3:before, 
 .icon-bull3 > li:before,
 .icon-bull3.after:after, 
 .icon-bull3.after > li:after {
-    font-size: 1.6em;
-    top: -.05em;
+  font-size: 1.6em;
+  top: -.05em;
 }
 
 .icon-nav:before, 
 .icon-nav > li:before,
 .icon-nav.after:after, 
 .icon-nav.after > li:after {
-    font-size: 1.6em;
+  font-size: 1.6em;
 }
 
 .icon-mail:before, 
 .icon-mail > li:before,
 .icon-mail.after:after, 
 .icon-mail.after > li:after {
-    font-size: 1.6em;
-    top: -.05em;
+  font-size: 1.6em;
+  top: -.05em;
 }
 
 ol.styled {
@@ -166,23 +165,23 @@ ol.styled {
 } 
 
 ol.styled > li {
-    list-style-type: none;
-    counter-increment: styled;
-    margin-bottom: .3em;
+  list-style-type: none;
+  counter-increment: styled;
+  margin-bottom: .3em;
 }
 
 ol.styled > li:before {
-    content: counter(styled); 
-    @include inline-block(middle);
-    width: 1em; 
-    height: 1em;
-    line-height: 1;
-    padding: 2px;
-    margin-right: .4em;
-    background: rgba(0,0,0,.5);
-    border-radius: 50%;
-    font-size: .9em;
-    text-align: center;
-    text-indent: -.1em;
-    color: white;		
+  content: counter(styled); 
+  @include inline-block(middle);
+  width: 1em; 
+  height: 1em;
+  line-height: 1;
+  padding: 2px;
+  margin-right: .4em;
+  background: rgba(0,0,0,.5);
+  border-radius: 50%;
+  font-size: .9em;
+  text-align: center;
+  text-indent: -.1em;
+  color: white;		
 }

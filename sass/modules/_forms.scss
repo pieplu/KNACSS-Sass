@@ -9,7 +9,7 @@
 
 form,
 fieldset {
-	border: none;
+  border: none;
 }
 
 /**
@@ -18,16 +18,16 @@ fieldset {
 input,
 button, select,
 label, .btn {
-	vertical-align: middle; /* 1 */
-	font-family: inherit;
+  vertical-align: middle; /* 1 */
+  font-family: inherit;
 }
 
 /**
  * 1. Prevents horizontal resizing
  */
 textarea {
-	resize: vertical; /* 1 */
-	font-family: inherit;
+  resize: vertical; /* 1 */
+  font-family: inherit;
 }
 
 
@@ -35,7 +35,7 @@ textarea {
  * Buttons 
  */
 .btn { 
-	@include inline-block();
+  @include inline-block();
 }
 
 /**
@@ -43,33 +43,33 @@ textarea {
  */
 .btn.alternate {}
 .btn.highlight {}
-.login   	   {}
-.logout  	   {}
-.primary	   {}
-.warning 	   {}
-.error  	   {}
-.success	   {}
+.login         {}
+.logout        {}
+.primary       {}
+.warning       {}
+.error         {}
+.success       {}
 
 /** 
  * Form elements
  */
 label { 
-	@include inline-block(middle);
-	cursor: pointer;
+  @include inline-block(middle);
+  cursor: pointer;
 }
 
 legend {
-	border: 0;
-	white-space: normal;
+  border: 0;
+  white-space: normal;
 }
 
 button,
 input,
 select {
-	font-family: "Century Gothic", helvetica, arial, sans-serif;
-	font-size: 100%;
-	margin: 0;
-	vertical-align: middle;
+  font-family: "Century Gothic", helvetica, arial, sans-serif;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: middle;
 }
 
 /**
@@ -77,11 +77,11 @@ select {
  * 2. Prevents horizontal resizing
  */
 textarea {
-	overflow: auto;   /* 1 */
-	min-height: 5em;
-	font-size: 1.75em;
-	vertical-align: top;
-	resize: vertical; /* 2 */
+  overflow: auto;   /* 1 */
+  min-height: 5em;
+  font-size: 1.75em;
+  vertical-align: top;
+  resize: vertical; /* 2 */
 }
 
 /**
@@ -92,9 +92,9 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	cursor: pointer;
-	-webkit-appearance: button; /* 1 */
-	*overflow: visible;         /* 2 */
+  cursor: pointer;
+  -webkit-appearance: button; /* 1 */
+  *overflow: visible;         /* 2 */
 }
 
 /**
@@ -103,13 +103,13 @@ input[type="submit"] {
  */
 input[type="checkbox"],
 input[type="radio"] {
-	padding: 0;    /* 1 */
-	*width: 13px;  /* 2 */
-	*height: 13px; /* 2 */
+  padding: 0;    /* 1 */
+  *width: 13px;  /* 2 */
+  *height: 13px; /* 2 */
 }
 
 input[type="search"] { 
-	-webkit-appearance: textfield;
+  -webkit-appearance: textfield;
 }
 
 /**
@@ -121,18 +121,18 @@ input[type="search"] {
  * Removes 'x' on right of search input when text is entered
  */
 input[type="search"] {
-	&::-webkit-search-decoration,
-	&::-webkit-search-cancel-button,
-	&::-webkit-search-results-button,
-	&::-webkit-search-results-decoration {
-		display: none;
-	}
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
 }
 
 ::-webkit-input-placeholder { color: #777; }
 
 input, textarea {
-	&:-moz-placeholder { color: #777; }
+  &:-moz-placeholder { color: #777; }
 }
 
 /**
@@ -142,8 +142,8 @@ button,
 input[type='button'], 
 input[type='reset'],
 input[type='submit'] {
-	&::-moz-focus-inner {
-		border: 0;
-		padding: 0;
-	}
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
 }
