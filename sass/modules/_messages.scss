@@ -25,18 +25,13 @@
 /**
  * Message types
  */
-.message-error {
-  @include message-scheme(#b94a48);
-}
+$messages-types: ( (error #b94a48),
+                   (info  #3a87ad),
+                   (warn  #c09853),
+                   (ok    #468847) );
 
-.message-ok {
-  @include message-scheme(#468847);
-}
-
-.message-warning {
-  @include message-scheme(#c09853);
-}
-
-.message-info {
-  @include message-scheme(#3a87ad);
+@each $type in $messages-types {
+    .message-#{nth($type, 1)} {
+        @include message-scheme(nth($type, 2));
+    }
 }
