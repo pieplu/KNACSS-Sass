@@ -7,16 +7,14 @@
  */
 
 /** 
- * Enable support for old browsers
- * 1. IE8-
- * 2. Firefox 3.6
+ * 1. Enable support for old browsers (IE8-, Firefox 3.6)
+ * 2. Enable print stylesheet
  */
 $legacy-support-for-ie: true !default; /* 1 */
-$legacy-support-for-mozilla: true !default; /* 2 */
+$legacy-support-for-mozilla: true !default; /* 1 */
+$print-stylesheet: true !default; /* 2 */
 
-/**
- * Import modules of your choice
- */
+
 @import "helpers/mixins";      // Sass only
 @import "helpers/reset";       // Home made reset
 @import "helpers/helpers";     // A couple of helper classes and Sass placeholders
