@@ -35,7 +35,7 @@
     @if $legacy-support-for-ie {
         font-size: $value + px;
     }
-    font-size: $value / $base + rem;
+    font-size: $value / $base + 0rem;
 }
 
 /**
