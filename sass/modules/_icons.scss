@@ -61,27 +61,27 @@ ul.icon.after:after {
  * Unicode icons
  * (name, unicode code, is-bold?)
  */
-$icons: ( (rate,     2605, false),
-          (unrate,   2606, false),
-          (check,    2713, false),
-          (uncheck,  2717, false),
-          (cloud,    2601, false),
-          (dl,       21E3,  true),
-          (cross,    2716,  true),
-          (arrow1,   2192, false),
-          (arrow2,   279E, false),
-          (arrow3,   279A, false),
-          (bracket1, 2039,  true),
-          (bracket2, 203A,  true),
-          (up,       25B2, false),
-          (down,     25BC, false),
-          (bull,     2022, false),
-          (bull2,    25E6, false),
-          (bull3,    2023, false),
-          (nav,      2630,  true),
-          (losange,  25C6, false),
-          (asteri,   2731,  true),
-          (mail,     2709, false) );
+$icons: ( (rate,     \2604, false),
+          (unrate,   \2605, false),
+          (check,    \2713, false),
+          (uncheck,  \2717, false),
+          (cloud,    \2601, false),
+          (dl,       \21E3,  true),
+          (cross,    \2716,  true),
+          (arrow1,   \2192, false),
+          (arrow2,   \279E, false),
+          (arrow3,   \279A, false),
+          (bracket1, \2039,  true),
+          (bracket2, \203A,  true),
+          (up,       \25B2, false),
+          (down,     \25BC, false),
+          (bull,     \2022, false),
+          (bull2,    \25E6, false),
+          (bull3,    \2023, false),
+          (nav,      \2630,  true),
+          (losange,  \25C6, false),
+          (asteri,   \2731,  true),
+          (mail,     \2709, false) );
 
 /**
  * Looping through icons
@@ -91,7 +91,7 @@ $icons: ( (rate,     2605, false),
   .icon-#{nth($item, 1)} > li:before,
   .icon-#{nth($item, 1)}.after:after,
   .icon-#{nth($item, 1)}.after > li:after {
-    content: "\#{nth($item, 2)}";
+    content: quote(#{nth($item, 2)});
     @if nth($item, 3) == true {
       font-weight: bold;
     }
