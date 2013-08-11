@@ -22,34 +22,6 @@ label, .btn {
   font-family: inherit;
 }
 
-/**
- * 1. Prevents horizontal resizing
- */
-textarea {
-  resize: vertical; /* 1 */
-  font-family: inherit;
-}
-
-
-/**
- * Buttons 
- */
-.btn { 
-  @include inline-block();
-}
-
-/**
- * Alternative classes
- */
-.btn.alternate {}
-.btn.highlight {}
-.login         {}
-.logout        {}
-.primary       {}
-.warning       {}
-.error         {}
-.success       {}
-
 /** 
  * Form elements
  */
@@ -67,7 +39,7 @@ button,
 input,
 select {
   font-family: "Helvetica", "Arial", sans-serif;
-  font-size: 100%;
+  font-size: inherit;
   margin: 0;
   vertical-align: middle;
 }
@@ -81,6 +53,7 @@ textarea {
   min-height: 5em;
   font-size: 1.75em;
   vertical-align: top;
+  font-family: inherit;
   resize: vertical; /* 2 */
 }
 
@@ -147,3 +120,24 @@ input[type='submit'] {
     padding: 0;
   }
 }
+
+/**
+ * Buttons 
+ */
+.btn { 
+  @include inline-block();
+  font-size: inherit;
+  font-family: inherit;
+}
+
+/**
+ * Alternative classes
+ */
+.btn.alternate {}
+.btn.highlight {}
+.login         {}
+.logout        {}
+.primary       {}
+.warning       {}
+.error         {}
+.success       {}

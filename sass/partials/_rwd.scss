@@ -67,8 +67,7 @@
   }
 
   /* Margins for large (l) screens */
-  .large-ma0,
-  .large-man { margin: 0 !important; }
+  .large-ma0 { margin: 0 !important; }
 }
 
 @include mq(small) {
@@ -108,15 +107,13 @@
   }
 
   /* margins for small (s) screens */
-  .small-ma0,
-  .small-man { margin: 0 !important; }
+  .small-ma0 { margin: 0 !important; }
 }
 
 @include mq(tiny) {
 
   /* Quick smartphone reset */
   .mod,
-  .item,
   .col,
   fieldset {
     display: block  !important;
@@ -128,10 +125,6 @@
     border: 0;
   }
 
-  .w30,
-  .w33, 
-  .w40,
-  .w50,
   .w300p,
   .w400p,
   .w500p {
@@ -180,6 +173,5 @@
   }
 
   /* Margins for tiny (t) screens */
-  .tiny-ma0,
-  .tiny-man { margin: 0 !important; }
+  .tiny-ma0 { margin: 0 !important; }
 }

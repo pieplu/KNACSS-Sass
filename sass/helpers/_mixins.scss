@@ -31,11 +31,11 @@
 /**
  * Mixin to handle REM font sizing with PX fallback
  */
-@mixin rem($value, $base: 10) {
+@mixin rem($value, $base: 16) {
   @if $legacy-support-for-ie {
-    font-size: $value + px;
+    font-size: $value * 1px;
   }
-  font-size: $value / $base + 0rem;
+  font-size: $value / $base * 1rem;
 }
 
 /**

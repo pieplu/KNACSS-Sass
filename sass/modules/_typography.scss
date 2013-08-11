@@ -3,23 +3,24 @@
 /* ----------------------------- */
 
 /**
- * 1. Base font-size (corresponds to 10px) adapted to REM unit 
- * 2. Orientation iOS font-size fix
+ * 1. Orientation iOS font-size fix
  */
 html {
-  font: 62.5%/1.5 "Century Gothic", helvetica, arial, sans-serif; /* 1 */
+  font-family "Century Gothic", helvetica, arial, sans-serif;
+  line-height: 1.5;
   color: #000;
   
   @media (orientation: landscape) and (max-device-width: 768px) {
-    -webkit-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 1 */
   }
 }
 
 /**
- * 1. Put the base font-size at 14px (1.4rem)
+ * 1. Put the base font-size at 14px
  */
 body {
   @include rem(14); /* 1 */
+  background: white;
 }
 
 /**
@@ -43,7 +44,6 @@ h3, .h3-like,
 h4, .h4-like,
 h5, .h5-like,
 h6, .h6-like {
-  font-weight: normal;
   margin: 21px 0 0 0;
 }
 
@@ -59,17 +59,17 @@ h6, .h6-like {
   line-height: 21px;
 }
 
-h1, .h1-like { @include rem(26); }
-h2, .h2-like { @include rem(24); }
-h3, .h3-like { @include rem(22); }
+h1, .h1-like { @include rem(32); }
+h2, .h2-like { @include rem(28); }
+h3, .h3-like { @include rem(24); }
 h4, .h4-like { @include rem(20); }
 h5, .h5-like { @include rem(18); }
 h6, .h6-like { @include rem(16); }
 
 /* alternate font-sizing */
-.smaller   { @include rem(10); }
+.smaller    { @include rem(10); }
 .small      { @include rem(12); }
-.medium    { @include rem(14); }
+.medium     { @include rem(14); }
 .big        { @include rem(16); }
 .bigger     { @include rem(18); }
 .biggest    { @include rem(20); }
