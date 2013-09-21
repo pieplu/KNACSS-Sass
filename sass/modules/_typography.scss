@@ -40,13 +40,13 @@ caption, figure {
 $headings-size: 32 28 24 20 18 16;
 
 @for $i from 1 through length($headings-size) {
-   h#{$i}, 
-  .h#{$i}-like {
-    $visual : nth($headings-size, $i);
-    $lh     : if($i < 4, 42, 21);
-
+  $selector    : "h#{$i}, .h#{$i}-like";
+  $visual      : nth($headings-size, $i);
+  $line-height : if($i < 4, 42, 21);
+  
+  #{$selector} {
     margin: 21 / $visual * 1em (0) (0) (0);
-    line-height: $lh / $visual;
+    line-height: $line-height / $visual;
     @include rem($visual);
   }
 }
