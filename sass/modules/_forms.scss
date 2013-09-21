@@ -4,7 +4,7 @@
 
 /**
  * Thanks to HTML5boilerplate
- * Source: github.com/nathansmith/formalize and www.sitepen.com 
+ * Source: github.com/nathansmith/formalize & www.sitepen.com 
  */
 
 form,
@@ -20,6 +20,7 @@ button, select,
 label, .btn {
   vertical-align: middle; /* 1 */
   font-family: inherit;
+  font-size: inherit;
 }
 
 /** 
@@ -51,15 +52,14 @@ select {
 textarea {
   overflow: auto;   /* 1 */
   min-height: 5em;
-  font-size: 1.75em;
-  vertical-align: top;
+  font-size: inherit;
   font-family: inherit;
+  vertical-align: top;
   resize: vertical; /* 2 */
 }
 
 /**
  * 1. Clickable input types in iOS
- * 2. Corrects inner spacing displayed oddly in IE7
  */
 button,
 input[type="button"],
@@ -67,18 +67,14 @@ input[type="reset"],
 input[type="submit"] {
   cursor: pointer;
   -webkit-appearance: button; /* 1 */
-  *overflow: visible;         /* 2 */
 }
 
 /**
  * 1. Corrects excess space around these inputs in IE8/9
- * 2. Corrects excess space around these inputs in IE7
  */
 input[type="checkbox"],
 input[type="radio"] {
   padding: 0;    /* 1 */
-  *width: 13px;  /* 2 */
-  *height: 13px; /* 2 */
 }
 
 input[type="search"] { 
@@ -102,10 +98,14 @@ input[type="search"] {
   }
 }
 
-::-webkit-input-placeholder { color: #777; }
+::-webkit-input-placeholder { 
+  color: #777; 
+}
 
 input, textarea {
-  &:-moz-placeholder { color: #777; }
+  &:-moz-placeholder { 
+    color: #777; 
+  }
 }
 
 /**
@@ -129,15 +129,3 @@ input[type='submit'] {
   font-size: inherit;
   font-family: inherit;
 }
-
-/**
- * Alternative classes
- */
-.btn.alternate {}
-.btn.highlight {}
-.login         {}
-.logout        {}
-.primary       {}
-.warning       {}
-.error         {}
-.success       {}

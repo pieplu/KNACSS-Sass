@@ -2,6 +2,11 @@
  * Soft reset                 *
 \*----------------------------*/
 
+.knacss-debug {
+  background: pink;
+  outline: 3px solid maroon;
+}
+
 html, body,
 textarea,
 figure, label {
@@ -105,7 +110,8 @@ img {
   vertical-align: middle;
   width: auto; /* 1 */
 
-  #map_canvas &, 
+  .gm-style &,
+  .gmnoscreen &,
   .gmnoprint & {
     max-width: none; /* 2 */
   }

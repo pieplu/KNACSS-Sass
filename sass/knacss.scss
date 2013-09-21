@@ -1,5 +1,5 @@
 /**
- * www.KNACSS.com V2.6m @author: Raphael Goetter, Alsacreations
+ * www.KNACSS.com V2.8a @author: Raphael Goetter, Alsacreations
  * Licence CC-BY http://creativecommons.org/licenses/by/3.0/fr/
  * 
  * Sass version maintained by @HugoGiraudel
@@ -9,10 +9,17 @@
 /** 
  * 1. Enable support for old browsers (IE8-, Firefox 3.6)
  * 2. Enable print stylesheet
+ * 3. Gutter value for grid layouts
+ * 4. Base font size: must be unitless
  */
-$legacy-support-for-ie: true !default; /* 1 */
-$legacy-support-for-mozilla: true !default; /* 1 */
-$print-stylesheet: true !default; /* 2 */
+$legacy-support-for-ie: true 		!default; /* 1 */
+$legacy-support-for-mozilla: true 	!default; /* 1 */
+
+$print-stylesheet: true 			!default; /* 2 */
+
+$gutter: 20px						!default; /* 3 */
+
+$base-font-size: 14 				!default; /* 4 */
 
 
 @import "helpers/mixins";          // Sass only
