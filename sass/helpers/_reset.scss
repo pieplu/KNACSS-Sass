@@ -7,9 +7,7 @@
   outline: 3px solid maroon;
 }
 
-html, body,
-textarea,
-figure, label {
+html, body {
   margin: 0;
   padding: 0;
 }
@@ -24,7 +22,7 @@ ul, ol {
 
 code, pre, samp, kbd {
   white-space: pre-wrap;
-  font-family: consolas, 'DejaVu Sans Mono', courier, monospace;
+  font-family: $monospace-font-stack;
   line-height: 1em;
 }
 
@@ -102,18 +100,27 @@ textarea, input, video {
 /**
  * Pictures
  * 1. Bugfix for IE8
- * 2. Bigfix for Gmap3 
+ * 2. Bugfix for Gmap3 
  * 3. Remove blue border on IE
  */
 img {
-  height: auto;
   vertical-align: middle;
   width: auto; /* 1 */
 
-  .gm-style &,
-  .gmnoscreen &,
-  .gmnoprint & {
-    max-width: none; /* 2 */
+  :not(.gm-style),
+  :not(.gmnoscreen),
+  :not(.gmnoprint) {
+    & {
+      height: auto !important; /* 2 */
+    }
+  }
+
+  .gm-style,
+  .gmnoscreen,
+  .gmnoprint {
+    & {
+      max-width: none !important; /* 2 */
+    }
   }
 
   a & {
