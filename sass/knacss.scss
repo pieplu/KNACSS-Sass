@@ -13,14 +13,15 @@
  * 4. Base font size: must be unitless
  * 5. Font stacks
  */
-$legacy-support-for-ie: true 		!default; /* 1 */
-$legacy-support-for-mozilla: true 	!default; /* 1 */
+$legacy-support-for-ie: true        !default; /* 1 */
+$legacy-support-for-mozilla: true   !default; /* 1 */
 
-$print-stylesheet: true 			!default; /* 2 */
+$print-stylesheet: true             !default; /* 2 */
 
-$gutter: 20px						!default; /* 3 */
 
-$base-font-size: 14 				!default; /* 4 */
+$gutter: 20px                       !default; /* 3 */
+
+$base-font-size: 14                 !default; /* 4 */
 
 $regular-font-stack: "Helvetica", "Arial", sans-serif; /* 5 */
 $monospace-font-stack: "Consolas", "DejaVu Sans Mono", "Courier", monospace; /* 5 */
