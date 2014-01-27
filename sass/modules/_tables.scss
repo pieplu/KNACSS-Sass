@@ -19,9 +19,10 @@ table,
 table {
   width: 100%;
   border: $border;
-  margin-bottom: 1.5em; 
+  margin-bottom: 1.5em;
 
-  &#recaptcha_table {
+  &#recaptcha_table,
+  &.table-auto {
     table-layout: auto; /* 1 */
   }
 }
@@ -33,7 +34,7 @@ table {
 caption {
   padding: 10px;
   color: #555;
-  font-style: italic;  
+  font-style: italic;
 }
 
 /**
@@ -67,12 +68,12 @@ td {
 }
 
 /**
- * Alternate tables 
+ * Alternate tables
  */
-.alternate { 
+.alternate {
   border: 0;
 
-  thead tr > * + * { 
+  thead tr > * + * {
     border-left: 0;
   }
 
@@ -81,10 +82,10 @@ td {
   }
 }
 
-/** 
- * Alternate-vert tables 
+/**
+ * Alternate-vert tables
  */
-.alternate-vert { 
+.alternate-vert {
   border: 0;
   border-right: $border;
 
@@ -98,15 +99,15 @@ td {
 }
 
 /**
- * Striped tables 
+ * Striped tables
  */
 .striped tbody tr:nth-child(odd) {
   background: #eee;
   background: rgba(0, 0, 0, .05);
 }
 
-/** 
- * Striped-vert tables 
+/**
+ * Striped-vert tables
  */
 .striped-vert tr > :first-child {
   background: #eee;

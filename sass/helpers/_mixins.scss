@@ -40,22 +40,22 @@
 
 /**
  * Compass-like inline-block mixin
- */ 
+ */
 @mixin inline-block($alignment: none) {
   @if $legacy-support-for-mozilla {
-    display: -moz-inline-stack; 
+    display: -moz-inline-stack;
   }
-  
-    display: inline-block;
-  
+
+  display: inline-block;
+
   @if $alignment and $alignment != none {
-    vertical-align: $alignment; 
+    vertical-align: $alignment;
   }
 
   @if $legacy-support-for-ie {
     *vertical-align: auto;
     zoom: 1;
-    *display: inline; 
+    *display: inline;
   }
 }
 

@@ -3,7 +3,7 @@
 \*----------------------------*/
 
 /**
- * HasLayout for IE6/IE7 
+ * HasLayout for IE6/IE7
  */
 @if $legacy-support-for-ie {
   .row, .col {
@@ -11,7 +11,7 @@
   }
 
   /**
-   * Warning: .col needs a width on IE6/IE7 
+   * Warning: .col needs a width on IE6/IE7
    */
   .col {
     *display: inline;
@@ -21,10 +21,10 @@
   /**
    * Add a slash at the end of this comment
    * If you want to enable box-sizing for IE6/IE7
-   * with a polyfill 
-   * Source: https://github.com/Schepp/box-sizing-polyfill *  
+   * with a polyfill
+   * Source: https://github.com/Schepp/box-sizing-polyfill *
   * {
-    behavior: url(/js/boxsizing.htc);
+    behavior: url(/inc/box-sizing-polyfill/boxsizing.htc);
   }
   /**/
 }

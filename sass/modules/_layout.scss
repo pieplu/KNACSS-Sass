@@ -4,9 +4,9 @@
 
 /**
  * Switching box-model for all elements
- * 1. ...and pseudo-elements 
+ * 1. ...and pseudo-elements
  */
-*, 
+*,
 *:after, /* 1 */
 *:before {
   -webkit-box-sizing: border-box;

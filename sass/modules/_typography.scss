@@ -2,17 +2,13 @@
 /* ==typography                  */
 /* ----------------------------- */
 
-/**
- * 1. Orientation iOS font-size fix
- */
 html {
   font-family: $regular-font-stack;
   line-height: 1.5;
   color: #000;
-  
-  @media (orientation: landscape) and (max-device-width: 768px) {
-    -webkit-text-size-adjust: 100%; /* 1 */
-  }
+
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 /**
@@ -26,7 +22,7 @@ body {
 /**
  * Font-sizing for content
  * Preserves vertical-rythm
- * Source: http://soqr.fr/vertical-rhythm/ 
+ * Source: http://soqr.fr/vertical-rhythm/
  */
 p, ul, ol, dl,
 blockquote, pre,
@@ -43,7 +39,7 @@ $headings-size: 32 28 24 20 18 16;
   $selector    : "h#{$i}, .h#{$i}-like";
   $visual      : nth($headings-size, $i);
   $line-height : if($i < 4, 42, 21);
-  
+
   #{$selector} {
     margin: 21 / $visual * 1em (0) (0) (0);
     line-height: $line-height / $visual;
@@ -52,18 +48,18 @@ $headings-size: 32 28 24 20 18 16;
 }
 
 /**
- * Alternate font-sizing 
+ * Alternate font-sizing
  * .smaller  => 10px
  * .small    => 12px
  * .big      => 16px
  * .bigger   => 18px
  * .biggest  => 20px
  */
-$sizes: 
-  smaller 10, 
-  small   12, 
-  big     16, 
-  bigger  18, 
+$sizes:
+  smaller 10,
+  small   12,
+  big     16,
+  bigger  18,
   biggest 20;
 
 @each $size in $sizes {

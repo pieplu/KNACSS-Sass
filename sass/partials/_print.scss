@@ -36,7 +36,7 @@
     /**
      * Try turning images to black and white if supported filters
      */
-    img { 
+    img {
       @include prefix(filter, grayscale(100%));
     }
 
@@ -80,7 +80,7 @@
     a {
       color: #000 !important;
       text-decoration: underline !important;
-      
+
       &[href]:after {
         content: " (" attr(href) ")"; /* 1 */
       }
